@@ -1,0 +1,47 @@
+html{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+body {
+    background-color: rgba(0,0,0,0);
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0px;
+}
+body div#main {
+    display: none;
+}
+
+body div#main .notepad {
+   background-image: url("../files/notepad.svg");
+   background-repeat: repeat;
+   height: 40%;
+   width: 27%;
+}
+
+body div#main .notepad textarea {
+    height: 100%; width: 100%; resize:none;
+    background: transparent;
+    border: none; outline: none;
+    font-size: .75vw;
+    padding-left: calc(10px + 1rem);
+    padding-right: calc(5px + .5rem);
+    line-height: 1.05vw; overflow-y:hidden;
+}
+
+body div#main .notepad button {
+    position: relative; background: coral;
+    outline: none; border: none;
+    color: white; font-weight: lighter;
+    font-size: .95vw; border-radius: .14rem;
+    margin-top: -1rem; margin-left: 1.2rem;
+    padding-left: 1.2rem; padding-right: 1.2rem;
+    -webkit-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.35);
+    -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;
+}
+
+body div#main .notepad button:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,18 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="./js/app.js" type="text/javascript"></script>
+        <script src="./js/variables.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="notepad">
+                <textarea onkeydown="limitLines(this, 20)" autofocus id="p1" spellcheck="false"></textarea>
+                <button onclick="dropNotepad();">Drop</button>
+            </div>
+        </div>
+    </body>
+</html>
